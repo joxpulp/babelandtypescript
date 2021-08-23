@@ -17,7 +17,7 @@ router.get('/productos/listar', (req: Request, res: Response) => {
 });
 
 // Endpoint GET para listar todos los messages
-router.get('/mensajes/listar', async (req, res) => {
+router.get('/mensajes/listar', async (req: Request, res: Response) => {
 	try {
 		const listMessages = await messages.getMessages();
 		listMessages.length !== 0
